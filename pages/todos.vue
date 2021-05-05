@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>HOME PAGE</h2>
+        <h2>TODOS PAGE</h2>
     </div>
 </template>
 
