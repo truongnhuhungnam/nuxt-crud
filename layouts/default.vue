@@ -9,10 +9,10 @@
                     Home
                 </nuxt-link>
                 <nuxt-link
-                    to="/todos"
+                    to="/posts"
                     class="px-4 py-2 border-b-2 border-indigo-100 transition hover:border-indigo-400"
                 >
-                    Todos
+                    Posts
                 </nuxt-link>
             </div>
         </div>
