@@ -1,7 +1,12 @@
 <template>
     <div class="mt-4">
+        <button
+            class="rounded-sm bg-yellow-500 text-white px-2 py-1 w-30 transition hover:bg-yellow-300"
+        >
+            Add A Post
+        </button>
         <div
-            class="border border-indigo-400 divide-y divide-indigo-400 rounded-sm"
+            class="mt-4 border border-indigo-400 divide-y divide-indigo-400 rounded-sm"
         >
             <SinglePost
                 v-for="post in posts"

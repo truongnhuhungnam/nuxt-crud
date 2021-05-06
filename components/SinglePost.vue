@@ -21,6 +21,7 @@
             </button>
             <button
                 class="rounded-sm bg-red-600 text-white px-2 py-1 w-30 transition hover:bg-red-400"
+                @click="deleteAPost(postData.id)"
             >
                 Delete
             </button>
@@ -35,6 +36,7 @@
 </template>
 
 <script>
+import { mapActions } from 'Vuex'
 export default {
     props: {
         postData: {
@@ -47,6 +49,11 @@ export default {
                 }
             },
         },
+    },
+    methods: {
+        ...mapActions({
+            deleteAPost: 'posts/deleteAPost',
+        }),
     },
 }
 </script>
