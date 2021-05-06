@@ -18,6 +18,15 @@ export const actions = {
             console.log(error)
         }
     },
+
+    async getAPost({ commit }, postId) {
+        try {
+            const post = await this.$axios.$get(`/posts/${postId}`)
+            commit('SET_POSTS', post)
+        } catch (error) {
+            console.log(error)
+        }
+    },
 }
 
 export const mutations = {
