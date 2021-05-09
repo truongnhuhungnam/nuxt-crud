@@ -6,7 +6,9 @@
         >
             Add A Post
         </button>
-        <sweet-modal ref="addModal"><PostAddForm /></sweet-modal>
+        <sweet-modal ref="addModal" overlay-theme="dark" title="Add Post">
+            <PostAddForm />
+        </sweet-modal>
 
         <div
             class="mt-4 border border-indigo-400 divide-y divide-indigo-400 rounded-sm"
