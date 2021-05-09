@@ -6,7 +6,7 @@
         >
             Add A Post
         </button>
-        <PostAddForm />
+        <sweet-modal ref="addModal"><PostAddForm /></sweet-modal>
 
         <div
             class="mt-4 border border-indigo-400 divide-y divide-indigo-400 rounded-sm"

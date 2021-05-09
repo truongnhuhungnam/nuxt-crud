@@ -1,5 +1,5 @@
 <template>
-    <sweet-modal ref="addModal">
+    <div>
         <form @submit.prevent="onSubmit">
             <div class="formField flex mb-4">
                 <p class="w-1/5 text-left">Title:</p>
@@ -31,17 +31,13 @@
                 </div>
             </div>
         </form>
-    </sweet-modal>
+    </div>
 </template>
 
 <script>
-import { SweetModal } from 'sweet-modal-vue'
 import { mapActions } from 'vuex'
 import { uuid } from 'vue-uuid'
 export default {
-    components: {
-        SweetModal,
-    },
     data() {
         return {
             title: '',
