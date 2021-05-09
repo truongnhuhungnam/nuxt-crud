@@ -2,7 +2,7 @@
     <div>
         {{ post.id }}
         {{ post.title }}
-        {{ post.author }}
+        {{ post.body }}
     </div>
 </template>
 
