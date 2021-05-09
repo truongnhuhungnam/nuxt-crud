@@ -12,7 +12,7 @@ export const getters = {
 export const actions = {
     async getPosts({ commit }) {
         try {
-            const posts = await this.$axios.$get('/posts')
+            const posts = await this.$axios.$get('/posts?_limit=5')
             commit('SET_POSTS', posts)
         } catch (error) {
             console.log(error)
@@ -36,6 +36,15 @@ export const actions = {
             console.log(error)
         }
     },
+
+    async addPost({ commit }, newPost) {
+        try {
+            await this.$axios.$post('/posts', newPost)
+            commit('ADD_POST', newPost)
+        } catch (error) {
+            console.log(error)
+        }
+    },
 }
 
 export const mutations = {
@@ -45,5 +54,9 @@ export const mutations = {
 
     DELETE_POST(state, postId) {
         state.posts = state.posts.filter((post) => post.id !== postId)
+    },
+
+    ADD_POST(state, newPost) {
+        state.posts.unshift(newPost)
     },
 }

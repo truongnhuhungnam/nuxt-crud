@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-between p-4">
-        <div class="info">
+        <div class="info w-2/3">
             <p class="text-lg">
                 <span class="text-indigo-400">Id:</span> {{ postData.id }}
             </p>
@@ -9,8 +9,8 @@
                 {{ postData.title }}
             </p>
             <p class="text-lg">
-                <span class="text-indigo-400">Author:</span>
-                {{ postData.author }}
+                <span class="text-indigo-400">Body:</span>
+                {{ postData.body }}
             </p>
         </div>
         <div class="action">
@@ -45,7 +45,7 @@ export default {
                 return {
                     id: '1',
                     title: 'title',
-                    author: 'author',
+                    body: 'body',
                 }
             },
         },

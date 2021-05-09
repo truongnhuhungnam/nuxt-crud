@@ -6,7 +6,8 @@
         >
             Add A Post
         </button>
-        <sweet-modal ref="addModal"> This is a success! </sweet-modal>
+        <PostAddForm />
+
         <div
             class="mt-4 border border-indigo-400 divide-y divide-indigo-400 rounded-sm"
         >
@@ -21,11 +22,9 @@
 
 <script>
 import { mapState } from 'Vuex'
-import { SweetModal } from 'sweet-modal-vue'
 import SinglePost from './SinglePost.vue'
 export default {
     components: {
-        SweetModal,
         SinglePost,
     },
     computed: {
