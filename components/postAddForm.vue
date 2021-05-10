@@ -58,6 +58,7 @@ export default {
                 title: this.title,
                 body: this.body,
             })
+            this.$refs.addModal.close()
         },
         openAddModal() {
             this.$refs.addModal.open()
