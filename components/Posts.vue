@@ -6,9 +6,8 @@
         >
             Add A Post
         </button>
-        <sweet-modal ref="addModal" overlay-theme="dark" title="Add Post">
-            <PostAddForm />
-        </sweet-modal>
+
+        <PostAddForm ref="addModal" />
 
         <div
             class="mt-4 border border-indigo-400 divide-y divide-indigo-400 rounded-sm"
@@ -39,7 +38,7 @@ export default {
     },
     methods: {
         openAddModal() {
-            this.$refs.addModal.open()
+            this.$refs.addModal.openAddModal()
         },
     },
 }

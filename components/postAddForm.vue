@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <sweet-modal ref="addModal" overlay-theme="dark" title="Add Post">
         <form @submit.prevent="onSubmit">
             <div class="formField flex mb-4">
                 <p class="w-1/5 text-left">Title:</p>
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </form>
-    </div>
+    </sweet-modal>
 </template>
 
 <script>
@@ -45,6 +45,9 @@ export default {
         }
     },
     methods: {
+        mounted() {
+            this.$emit('myEvent')
+        },
         ...mapActions({
             addPost: 'posts/addPost',
         }),
@@ -55,6 +58,9 @@ export default {
                 title: this.title,
                 body: this.body,
             })
+        },
+        openAddModal() {
+            this.$refs.addModal.open()
         },
     },
 }
