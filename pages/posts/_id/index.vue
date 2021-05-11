@@ -1,8 +1,12 @@
 <template>
-    <div>
-        {{ post.id }}
-        {{ post.title }}
-        {{ post.body }}
+    <div class="w-1/2 mx-auto">
+        <h2 class="text-center text-2xl">{{ post.title }}</h2>
+        <p class="my-4">{{ post.body }}</p>
+        <nuxt-link
+            to="/posts"
+            class="border-b-2 border-blue-600 hover:opacity-50 transition"
+            >Back to list</nuxt-link
+        >
     </div>
 </template>
 

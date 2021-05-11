@@ -1,8 +1,8 @@
 <template>
     <div class="mt-4">
         <button
-            class="rounded-sm bg-yellow-500 text-white px-2 py-1 w-30 transition hover:bg-yellow-300"
-            @click="openAddModal"
+            class="rounded-sm bg-green-500 text-white px-2 py-1 w-30 transition hover:bg-green-300"
+            @click="openModal"
         >
             Add A Post
         </button>
@@ -37,8 +37,8 @@ export default {
         this.$store.dispatch('posts/getPosts')
     },
     methods: {
-        openAddModal() {
-            this.$refs.addModal.openAddModal()
+        openModal() {
+            this.$refs.addModal.openChildModal()
         },
     },
 }

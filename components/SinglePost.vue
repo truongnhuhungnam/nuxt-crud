@@ -15,18 +15,18 @@
         </div>
         <div class="action">
             <button
-                class="rounded-sm bg-green-600 text-white px-2 py-1 w-30 transition hover:bg-green-400"
+                class="rounded-sm bg-blue-600 text-white px-2 py-1 w-30 transition hover:bg-blue-400"
             >
                 Edit
             </button>
             <button
                 class="rounded-sm bg-red-600 text-white px-2 py-1 w-30 transition hover:bg-red-400"
-                @click="deleteAPost(postData.id)"
+                @click="deleted(postData.id)"
             >
                 Delete
             </button>
             <nuxt-link
-                class="rounded-sm bg-indigo-600 text-white px-2 py-1 w-30 inline-block transition hover:bg-indigo-400"
+                class="rounded-sm bg-yellow-600 text-white px-2 py-1 w-30 inline-block transition hover:bg-yellow-400"
                 :to="'posts/' + postData.id"
             >
                 More Detail
@@ -54,6 +54,12 @@ export default {
         ...mapActions({
             deleteAPost: 'posts/deleteAPost',
         }),
+        deleted(PostId) {
+            this.deleteAPost(PostId)
+            this.$toasted.error('Delete Post Successed!', {
+                duration: 4000,
+            })
+        },
     },
 }
 </script>

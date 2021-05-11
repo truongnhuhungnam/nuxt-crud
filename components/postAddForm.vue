@@ -45,9 +45,6 @@ export default {
         }
     },
     methods: {
-        mounted() {
-            this.$emit('myEvent')
-        },
         ...mapActions({
             addPost: 'posts/addPost',
         }),
@@ -59,8 +56,11 @@ export default {
                 body: this.body,
             })
             this.$refs.addModal.close()
+            this.$toasted.success('Add Post Successed!', {
+                duration: 4000,
+            })
         },
-        openAddModal() {
+        openChildModal() {
             this.$refs.addModal.open()
         },
     },
