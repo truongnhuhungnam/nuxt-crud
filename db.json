@@ -1,29 +1,34 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server1",
-      "author": "typicode3"
+        "userId": 1,
+        "id": 1,
+        "title": "json-server1",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mi et ipsum pharetra efficitur sed at orci. Sed ligula nisi, bibendum volutpat ex sit amet, viverra vehicula diam. Nunc ac pharetra eros. Nullam lacinia gravida magna, sit amet suscipit dui tempor sit amet. Vivamus tempor ultrices scelerisque. Sed accumsan urna in quam laoreet, ac dapibus mauris ultricies. Donec elementum sagittis magna vel molestie. Proin aliquet massa elit, sit amet aliquam turpis rutrum elementum. Vestibulum vitae enim nec odio commodo pulvinar in non mauris. In at ipsum ut turpis convallis feugiat sit amet id magna."
     }
     ,{
-      "id": 2,
-      "title": "json-server2",
-      "author": "typicode3"
+        "userId": 1,
+        "id": 2,
+        "title": "json-server2",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mi et ipsum pharetra efficitur sed at orci. Sed ligula nisi, bibendum volutpat ex sit amet, viverra vehicula diam. Nunc ac pharetra eros. Nullam lacinia gravida magna, sit amet suscipit dui tempor sit amet. Vivamus tempor ultrices scelerisque. Sed accumsan urna in quam laoreet, ac dapibus mauris ultricies. Donec elementum sagittis magna vel molestie. Proin aliquet massa elit, sit amet aliquam turpis rutrum elementum. Vestibulum vitae enim nec odio commodo pulvinar in non mauris. In at ipsum ut turpis convallis feugiat sit amet id magna."
     }
     ,{
-      "id": 3,
-      "title": "json-server3",
-      "author": "typicode3"
+        "userId": 1,
+        "id": 3,
+        "title": "json-server3",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mi et ipsum pharetra efficitur sed at orci. Sed ligula nisi, bibendum volutpat ex sit amet, viverra vehicula diam. Nunc ac pharetra eros. Nullam lacinia gravida magna, sit amet suscipit dui tempor sit amet. Vivamus tempor ultrices scelerisque. Sed accumsan urna in quam laoreet, ac dapibus mauris ultricies. Donec elementum sagittis magna vel molestie. Proin aliquet massa elit, sit amet aliquam turpis rutrum elementum. Vestibulum vitae enim nec odio commodo pulvinar in non mauris. In at ipsum ut turpis convallis feugiat sit amet id magna."
     },
     {
-      "id": 4,
-      "title": "json-server4",
-      "author": "typicode3"
+        "userId": 1,
+        "id": 4,
+        "title": "json-server4",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mi et ipsum pharetra efficitur sed at orci. Sed ligula nisi, bibendum volutpat ex sit amet, viverra vehicula diam. Nunc ac pharetra eros. Nullam lacinia gravida magna, sit amet suscipit dui tempor sit amet. Vivamus tempor ultrices scelerisque. Sed accumsan urna in quam laoreet, ac dapibus mauris ultricies. Donec elementum sagittis magna vel molestie. Proin aliquet massa elit, sit amet aliquam turpis rutrum elementum. Vestibulum vitae enim nec odio commodo pulvinar in non mauris. In at ipsum ut turpis convallis feugiat sit amet id magna."
     },
     {
-      "id": 5,
-      "title": "json-server5",
-      "author": "typicode3"
+        "userId": 2,
+        "id": 5,
+        "title": "json-server5",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in mi et ipsum pharetra efficitur sed at orci. Sed ligula nisi, bibendum volutpat ex sit amet, viverra vehicula diam. Nunc ac pharetra eros. Nullam lacinia gravida magna, sit amet suscipit dui tempor sit amet. Vivamus tempor ultrices scelerisque. Sed accumsan urna in quam laoreet, ac dapibus mauris ultricies. Donec elementum sagittis magna vel molestie. Proin aliquet massa elit, sit amet aliquam turpis rutrum elementum. Vestibulum vitae enim nec odio commodo pulvinar in non mauris. In at ipsum ut turpis convallis feugiat sit amet id magna."
     }
   ]
 }
