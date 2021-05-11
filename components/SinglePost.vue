@@ -10,7 +10,12 @@
             </p>
             <p class="text-lg">
                 <span class="text-indigo-400">Body:</span>
-                {{ postData.body }}
+                <truncate
+                    clamp="..."
+                    :length="90"
+                    less="Show Less"
+                    :text="postData.body"
+                ></truncate>
             </p>
         </div>
         <div class="action">
